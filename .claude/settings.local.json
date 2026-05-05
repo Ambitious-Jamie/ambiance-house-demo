@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Read(//opt/homebrew/Cellar/**)",
+      "Read(//Users/jamie/**)",
+      "Read(//usr/local/**)",
+      "Bash(command -v bun)",
+      "Bash(command -v pnpm)",
+      "Bash(lsof -nP -iTCP -sTCP:LISTEN)",
+      "Bash(curl -s -o /dev/null -w \"5173:%{http_code}\\\\n\" http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"5174:%{http_code}\\\\n\" http://localhost:5174)",
+      "WebFetch(domain:ambiance.co.nz)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://ambiance.co.nz/ -o ambiance.html)"
+    ]
+  }
+}
